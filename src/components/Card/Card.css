@@ -1,0 +1,47 @@
+.cardContainer {
+    width: 100%;
+    border: 1px solid rgb(214, 213, 213);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cardContainer:hover {
+    transform: translateY(-2px);
+    box-shadow: rgba(60, 64, 67, 0.5) 0px 1px 4px 0px, rgba(60, 64, 67, 0.3) 0px 1px 6px 2px;
+}
+
+.cardContainer > * {
+    width: 100%;
+}
+
+.cardTags {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tags {
+    width: max-content;
+    padding: 2px 8px;
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+
+.status-icon {
+    margin-right: 5px;
+}
+
+.status-icon.todo {
+    color: greenyellow;
+}
+
+.status-icon.backlog {
+    color: red;
+}
+
+.status-icon.in-progress {
+    color: orange;
+}
